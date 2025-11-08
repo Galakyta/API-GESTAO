@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0jwY7XYGsP0=",
+  "dgSpecHash": "wA5a+8HlBIo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lotus\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
+  "projectFilePath": "C:\\Users\\Lotus\\Desktop\\vers final do trabalho\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lotus\\.nuget\\packages\\bogus\\35.6.5\\bogus.35.6.5.nupkg.sha512",
     "C:\\Users\\Lotus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

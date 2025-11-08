@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lotus\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj": {}
+    "C:\\Users\\Lotus\\Desktop\\vers final do trabalho\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lotus\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj": {
+    "C:\\Users\\Lotus\\Desktop\\vers final do trabalho\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lotus\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
+        "projectUniqueName": "C:\\Users\\Lotus\\Desktop\\vers final do trabalho\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
         "projectName": "prototipoGestao",
-        "projectPath": "C:\\Users\\Lotus\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
+        "projectPath": "C:\\Users\\Lotus\\Desktop\\vers final do trabalho\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
         "packagesPath": "C:\\Users\\Lotus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lotus\\API-GESTAO\\andertech\\prototipoGestao\\obj\\",
+        "outputPath": "C:\\Users\\Lotus\\Desktop\\vers final do trabalho\\API-GESTAO\\andertech\\prototipoGestao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lotus\\AppData\\Roaming\\NuGet\\NuGet.Config"

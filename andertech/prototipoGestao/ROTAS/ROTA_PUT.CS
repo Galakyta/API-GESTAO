@@ -1,4 +1,4 @@
-using prototipoGestao.Data;
+using prototipoGestao.Data; //usings pra ligar com os namespace
 using prototipoGestao.Models;
 
 namespace prototipoGestao.Rotas;
@@ -7,26 +7,22 @@ public static class Rota_PUT
 {
     public static void MapPutRoutes(this WebApplication app)
     {
-        // PUT /dispositivos/{id}
-        app.MapPut("/dispositivos/{id:guid}", async (Guid id, Dispositivo dto, AppDbContext db) =>
+        //isso aqui vai server pra atualizar qualquer campo pelo id, tmbm n e pra funcionar sem o id
+        app.MapPut("/dispositivos/{id:guid}", async (Guid id, Dispositivo atualizado, AppDbContext db) =>
         {
-            // validações simples
-            if (string.IsNullOrWhiteSpace(dto.Fabricante))
-                return Results.BadRequest("Campo 'Fabricante' é obrigatório.");
-            if (string.IsNullOrWhiteSpace(dto.Empresa))
-                return Results.BadRequest("Campo 'Empresa' é obrigatório.");
-            if (string.IsNullOrWhiteSpace(dto.Local))
-                return Results.BadRequest("Campo 'Local' é obrigatório.");
-
             var d = await db.Dispositivos.FindAsync(id);
             if (d is null) return Results.NotFound();
 
-            // atualiza campos
-            d.Fabricante = dto.Fabricante;
-            d.Empresa     = dto.Empresa;
-            d.Local       = dto.Local;
-            d.Tipo        = dto.Tipo;
-            d.Ativo       = dto.Ativo;
+
+            
+            //se nn tiver atualizando confere isso
+            d.Fabricante = atualizado.Fabricante;
+            d.Empresa = atualizado.Empresa;
+            d.Local = atualizado.Local;
+            d.Tipo = atualizado.Tipo;
+            d.Ativo = atualizado.Ativo;
+            d.Lucro = atualizado.Lucro;
+            d.CustoDeOperacao = atualizado.CustoDeOperacao;
 
             await db.SaveChangesAsync();
             return Results.Ok(d);

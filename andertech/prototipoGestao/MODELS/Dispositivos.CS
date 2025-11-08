@@ -1,4 +1,5 @@
-namespace prototipoGestao.models;
+namespace prototipoGestao.Models;
+
 
 
 /*funcao especial em C# q transforma numeros inteiros em termos legivei, criando um novo tipo, entao 

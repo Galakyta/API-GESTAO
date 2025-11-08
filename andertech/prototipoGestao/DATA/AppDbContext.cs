@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
-using prototipoGestao.models;
-
+using prototipoGestao.Models;
 namespace prototipoGestao.Data;
+using prototipoGestao.Models;
+
 
 public class AppDbContext : DbContext //classe que herda o DbContext pra lidar com os dados depois, db vindo EFC
 

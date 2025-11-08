@@ -41,6 +41,8 @@ if (app.Environment.IsDevelopment())
 // Ativa as rotas GET
 app.MapGetRoutes();
 app.MapPostRoutes();
+app.MapPutRoutes();
+app.MapDeleteRoutes();
 
 
 app.Run();

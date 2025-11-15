@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "UXat5HnWJJujKSlJIj2HF3o0wSrA/IcEBQ5D0Wa4XJ4=",
+  "Source": "prototipoGestao",
+  "BasePath": "_content/prototipoGestao",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "prototipoGestao\\wwwroot",
+      "Source": "prototipoGestao",
+      "ContentRoot": "C:\\Users\\ander\\API-GESTAO\\andertech\\prototipoGestao\\wwwroot\\",
+      "BasePath": "_content/prototipoGestao",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ander\\API-GESTAO\\andertech\\prototipoGestao\\wwwroot\\index.html",
+      "SourceId": "prototipoGestao",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ander\\API-GESTAO\\andertech\\prototipoGestao\\wwwroot\\",
+      "BasePath": "_content/prototipoGestao",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

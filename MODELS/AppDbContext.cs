@@ -8,7 +8,8 @@ namespace prototipoGestao.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         //config basica do db
         public DbSet<Dispositivo> Dispositivos => Set<Dispositivo>();
-
+        public DbSet<Despesa> Despesas => Set<Despesa>();
+        
         protected override void OnModelCreating(ModelBuilder b)
         {
             b.Entity<Dispositivo>(e =>
@@ -31,7 +32,22 @@ namespace prototipoGestao.Data
                 e.Property(x => x.CustoDeOperacao)
                     .HasColumnType("decimal(18,2)")
                     .HasDefaultValue(0);
+                
             });
+
+            b.Entity<Despesa>(e =>
+            {
+                e.ToTable("Despesas"); //iindica a table pra onde isso aqui vai no sql
+                e.HasKey(x => x.Id); //torna isso aqui a pk
+                e.Property(x => x.Nome).IsRequired(); //is required quer dizer que o campo é obrigatorio, mas pk e data nn precisa
+                e.Property(x => x.Data).IsRequired();
+                e.Property(x => x.Categoria).IsRequired(false); // se nn for requirido deixa assim pra ser explicito
+                e.Property(x => x.Valor).HasColumnType("decimal(18,2)").HasDefaultValue(0).IsRequired(); //define o tipo default value e se e requerido
+                e.Property(x => x.Imposto).HasColumnType("decimal(18,2)").HasDefaultValue(0).IsRequired();
+            });
+            //vai servir pra adicionar as propiedades da tabela
         }
     }
+
+
 }

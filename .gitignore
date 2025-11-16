@@ -1,0 +1,32 @@
+# === Build e compilação ===
+bin/
+obj/
+out/
+
+# === Arquivos compilados ===
+*.dll
+*.exe
+*.pdb
+*.cache
+*.json.cache
+
+# === Logs ===
+*.log
+
+# === Arquivos de usuário do Visual Studio / VSCode ===
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# === Configurações específicas da IDE ===
+.vscode/
+*.csproj.user
+
+# === Arquivos temporários do sistema ===
+*.tmp
+*.temp
+
+# === Ignorar pacotes NuGet locais ===
+*.nupkg
+

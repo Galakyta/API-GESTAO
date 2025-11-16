@@ -113,6 +113,45 @@
         </div>
     </div>
 
+    <!-- =============== LISTAR =============== -->
+    <div class="card">
+        <button class="card-header">Listar Despesas ▼</button>
+        <div class="card-body">
+            <button onclick="listarDespesas()">Atualizar Lista</button>
+            <table id="tabelaDeDespesas">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Categoria</th>
+                        <th>Imposto</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- =============== LISTAR =============== -->
+    <div class="card">
+        <button class="card-header">Relatorio▼</button>
+        <div class="card-body">
+            <button onclick="relatorio()">Atualizar Lista</button>
+            <table id="relatorio">
+                <thead>
+                    <tr>
+                        <th>dispositivos</th>
+                        <th>despesas</th>
+                        <th>lucro</th>
+                        
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
     <script src="js/app.js"></script>
 </body>
 </html>

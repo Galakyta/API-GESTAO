@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using prototipoGestao.Data;
 
@@ -10,9 +11,11 @@ using prototipoGestao.Data;
 namespace prototipoGestao.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251116191208_AddDespesa")]
+    partial class AddDespesa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.20");
@@ -28,11 +31,6 @@ namespace prototipoGestao.Migrations
 
                     b.Property<DateTime>("Data")
                         .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Imposto")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(18,2)")
-                        .HasDefaultValue(0m);
 
                     b.Property<string>("Nome")
                         .IsRequired()

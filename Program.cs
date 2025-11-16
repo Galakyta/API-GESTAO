@@ -46,7 +46,17 @@ app.MapPostRoutes();
 app.MapPutRoutes();
 app.MapDeleteRoutes();
 
-app.Run();
+app.MapGetDespesasRoutes();
+app.MapDespesasDeleteRoutes();
+app.MapDespesasPutRoutes();
+app.MapDespesaPostRoutes();
+app.MapGetMaioresDespesasRoutes();
+app.MapGetLucroRoutes();
+app.MapGetRelatorioRoutes();
+
+//dotnet ef migrations add AddDespesa
+
+//dotnet ef database update
 
 
 
@@ -71,6 +81,7 @@ if (app.Environment.IsDevelopment())
 
     app.UseCors("dev");
 }
+
 
 
 app.Run();

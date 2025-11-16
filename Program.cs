@@ -31,7 +31,30 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+
 var app = builder.Build();
+
+// procura automaticamente index.html em wwwroot
+app.UseDefaultFiles();
+
+// habilita servir HTML / CSS / JS da pasta wwwroot
+app.UseStaticFiles();
+
+// SUAS ROTAS DA API
+app.MapGetRoutes();
+app.MapPostRoutes();
+app.MapPutRoutes();
+app.MapDeleteRoutes();
+
+app.Run();
+
+
+
+// Se quiser servir o index.html ao acessar /
+app.MapGet("/", async context =>
+{
+    await context.Response.SendFileAsync("wwwroot/index.html");
+});
 
 if (app.Environment.IsDevelopment())
 {
@@ -49,19 +72,5 @@ if (app.Environment.IsDevelopment())
     app.UseCors("dev");
 }
 
-// HABILITA SERVIR HTML / CSS / JS
-app.UseStaticFiles();
-
-// SUAS ROTAS
-app.MapGetRoutes();
-app.MapPostRoutes();
-app.MapPutRoutes();
-app.MapDeleteRoutes();
-
-// Se quiser servir o index.html ao acessar /
-app.MapGet("/", async context =>
-{
-    await context.Response.SendFileAsync("wwwroot/index.html");
-});
 
 app.Run();

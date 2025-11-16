@@ -1726,19 +1726,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ander\\.nuget\\packages\\": {}
+    "C:\\Users\\Lotus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ander\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
+      "projectUniqueName": "C:\\Users\\Lotus\\Desktop\\parte do anderson\\API-GESTAO\\prototipoGestao.csproj",
       "projectName": "prototipoGestao",
-      "projectPath": "C:\\Users\\ander\\API-GESTAO\\andertech\\prototipoGestao\\prototipoGestao.csproj",
-      "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ander\\API-GESTAO\\andertech\\prototipoGestao\\obj\\",
+      "projectPath": "C:\\Users\\Lotus\\Desktop\\parte do anderson\\API-GESTAO\\prototipoGestao.csproj",
+      "packagesPath": "C:\\Users\\Lotus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lotus\\Desktop\\parte do anderson\\API-GESTAO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lotus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1761,7 +1761,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net7.0": {
@@ -1797,24 +1798,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1823,7 +1806,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

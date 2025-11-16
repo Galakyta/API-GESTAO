@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+input,
+button,
+select {
+    padding: 8px;
+    margin: 5px;
+}
+
+table {
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background: #eee;
+}
+
+/* Cards + dropdown */
+
+.header {
+    border: 3px solid rgb(0, 0, 0);
+    margin: 2px;
+    background-color: rgb(219, 253, 150);
+    text-align: left;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #ebf3e4;
+}
+
+.card-header {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    background: #f1f395;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.card-header:hover {
+    background: #fcff65;
+}
+
+.card-body {
+    display: none; /* inicia fechado */
+    padding: 15px;
+}
